@@ -7,7 +7,14 @@
 
 body{
     font-family: "poppins", sans-serif;
+    background: linear-gradient(to right, rgba(242, 239, 239, 0.527),rgba(248, 246, 246, 0.862) 100%);
+    background-size: cover;
+    background-position: fixed;
+    flex-direction: column;
 }
+
+
+
 
 html{
     scroll-behaviour: smooth;
@@ -17,12 +24,7 @@ p{
     color:rgb(255, 127, 127) ;
 }
 
-img{
-    justify-content: center;
-    align-items: center;
-    width: 68vh;
-    height: 75vh;
-}
+
 
 
 /*TRANSITION*/
@@ -60,7 +62,7 @@ a {
 a:hover{
     color: rgba(250, 95, 5, 0.87);
     text-decoration: underline;
-    text-decoration-color: dark magenta;
+    text-decoration-color: dark rgb(234, 103, 9);
     text-underline-offset: 2 rem;
 }
 
@@ -75,7 +77,7 @@ a:hover{
 /*HAMBURGER MENU*/
 
 #hamburger-nav {
-    display: flex;
+    display: none;
 }
 
 .hamburger-menu {
@@ -104,7 +106,6 @@ a:hover{
     top: 100%;
     right: 0%;
     background-color: azure;
-    
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -358,94 +359,41 @@ article.icon {
     cursor: default;
 }
 
+
 #experience,
 .experience-details-container{
     margin-top: 2rem;
 
 }
 
-#profile,
-.section-container
-{
-    display: block;
+/*proj*/
+#projects{
+    position: relative;
+}
+
+.color-container{
+
+    border-color: rgb(164,164,164);
+    background: rgb(237, 233, 233);
+    box-shadow: 0px 0px 20px rgb(14, 10, 10),
+                0px 0px 40px;
+            }
+
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title{
+    margin: 1rem;
+    color: black;
 
 }
-.arrow{
-    display: none;
 
+.project-btn{
+    color: black;
+    border-color: rgb(164,164,164);
 }
-section,
-.section-container{
-    height: fit-content;
-}
-section{
-    margin: 0.5%;
-}
-.section_pic-container{
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-}
-.about-containers{
-    margin-top: 0;
 
-}
-} 
-@media screen and (max-width: 600px){
-#contact,
-footer{
-    height:40vh
-}
-#profile{
-    height: 83vh;
-    margin-bottom: 0;
-}
-article{
-    font-size: 1rem;
-}
-footer nav{
-    height: fit-content;
-    margin-bottom:2rem
-}
-.about-containers,
-.contact-info-upper-container,
-.btn-container{
-    flex-wrap: wrap;
-}
-.contact-info-container{
-    margin: 0;
-}
-.contact-info-container p, .nav-links li a{
-    font-size: 1rem;
 
-}
-.experience-sub-title{
-    font-size: 1.25rem;
-}
-.logo{
-    font-size: 1.5rem;
-
-}
-.nav-links{
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-}
-.section_pic-container{
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-
-}
-.section_text_p2 {
-    font-size: 1.25rem;
-
-}
-.title{
-    font-size: 2rem;
-
-}
-.text-container{
-    text-align: justify;
-}
-}
